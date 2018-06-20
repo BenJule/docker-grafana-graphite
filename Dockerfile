@@ -13,6 +13,7 @@ RUN     apk add --update --no-cache nginx nodejs nodejs-npm git curl wget gcc ca
         wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.26-r0/glibc-2.26-r0.apk                &&\
         apk add --no-cache  glibc-2.26-r0.apk                                                                        &&\
         rm glibc-2.26-r0.apk                                                                                         &&\
+        apk add --no-cache collectd
         adduser -D -u 1000 -g 'www' www                                                                              &&\
         pip install -U pip pytz gunicorn six --no-cache-dir                                                          &&\
         npm install -g wizzy                                                                                         &&\
