@@ -101,7 +101,7 @@ RUN     chown -R www /var/lib/nginx/
 # ---------------- #
 
 # Grafana
-EXPOSE  80
+EXPOSE  3000
 
 # StatsD UDP port
 EXPOSE  8125/udp
